@@ -31,17 +31,21 @@ header p {
   display: flex;
   width: 200px;
   height: 80px;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
 }
 
 .switch-theme p {
   font-size: 14px;
+  font-weight: 400;
+  color: hsl(228, 34%, 66%);
 }
 .toggle {
   width: 55px;
   height: 25px;
   border-radius: 500px;
+  display: flex;
+  justify-content: flex-start;
   padding: 3px;
   background-image: linear-gradient(
     to right,
@@ -54,4 +58,5 @@ header p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  cursor: pointer;
 }
