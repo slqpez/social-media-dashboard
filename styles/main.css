@@ -13,7 +13,7 @@ header {
   background: hsl(232, 19%, 15%);
   display: flex;
   justify-content: space-between;
-  height: 200px;
+  height: 250px;
   padding: 35px 150px 0px 150px;
 }
 header h1 {
@@ -30,14 +30,16 @@ header p {
 .switch-theme {
   display: flex;
   width: 200px;
-  height: 80px;
+  height: 50px;
   gap: 10px;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .switch-theme p {
   font-size: 14px;
   font-weight: 400;
+
   color: hsl(228, 34%, 66%);
 }
 .toggle {
@@ -59,4 +61,22 @@ header p {
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.stats-grid {
+  display: flex;
+  position: absolute;
+  top: 150px;
+  padding: 0 150px;
+  gap: 30px;
+}
+.stats-item {
+  width: 250px;
+  height: 210px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
