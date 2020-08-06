@@ -1,3 +1,13 @@
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +25,7 @@ header {
   justify-content: space-between;
   height: 250px;
   padding: 35px 150px 0px 150px;
+  z-index: -1;
 }
 header h1 {
   font-size: 24px;
@@ -64,14 +75,16 @@ header p {
 }
 
 .stats-grid {
+  width: 100%;
   display: flex;
   position: absolute;
+  justify-content: space-between;
   top: 150px;
   padding: 0 150px;
-  gap: 30px;
 }
 .stats-item {
-  width: 250px;
+  width: 263px;
+  position: relative;
   height: 210px;
   background-color: hsl(228, 28%, 20%);
   border-radius: 5px;
@@ -79,4 +92,12 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.border {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: aqua;
+  top: 0px;
 }
