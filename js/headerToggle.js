@@ -31,7 +31,7 @@ function changeHeaderDark() {
   header.style.background = "hsl(232, 19%, 15%)";
   header.style.color = "white";
   switchText.textContent = "Dark Mode";
-  switchText.style.color = "hsl(228, 34%, 66%)";
+  switchText.style.color = "white";
 }
 
 function changeHeaderLight() {
