@@ -78,15 +78,17 @@ header p {
 .stats-grid {
   width: 100%;
   display: flex;
-  position: absolute;
-  justify-content: space-between;
+  position: relative;
   gap: 30px;
-  top: 150px;
+  justify-content: space-between;
+  top: -110px;
   padding: 0 150px;
   z-index: 1;
+  flex: 1;
+  flex-wrap: wrap;
 }
 .stats-item {
-  width: 280px;
+  width: 260px;
   position: relative;
   height: 235px;
   background-color: hsl(228, 28%, 20%);
@@ -95,6 +97,12 @@ header p {
   flex-direction: column;
   align-items: center;
   padding: 35px;
+  cursor: pointer;
+  flex-shrink: 1;
+}
+
+.stats-item:hover {
+  background-color: hsl(228, 28%, 25%);
 }
 
 .border {
@@ -168,4 +176,59 @@ header p {
 
 .neg {
   color: var(--Bright-Red);
+}
+
+.overview-container {
+  padding: 0 150px;
+}
+.overview-container h2 {
+  margin-bottom: 25px;
+}
+
+.overview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.overview-item {
+  width: 260px;
+  height: 130px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background-color: hsl(228, 28%, 20%);
+  padding: 25px;
+}
+.overview-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.overview-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.n-overview {
+  font-weight: 500;
+  font-size: 1.7em;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers img {
+  margin-right: 5px;
+}
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
 }
