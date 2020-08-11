@@ -4,8 +4,9 @@
 
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
+  --color-text: hsl(228, 34%, 66%);
 }
 
 * {
@@ -22,10 +23,11 @@ body {
 header {
   background: hsl(232, 19%, 15%);
   display: flex;
+  position: relative;
   justify-content: space-between;
   height: 250px;
   padding: 35px 150px 0px 150px;
-  z-index: -1;
+  z-index: -2;
 }
 header h1 {
   font-size: 24px;
@@ -51,7 +53,7 @@ header p {
   font-size: 14px;
   font-weight: 400;
 
-  color: hsl(228, 34%, 66%);
+  color: var(--color-text);
 }
 .toggle {
   width: 55px;
@@ -79,25 +81,89 @@ header p {
   display: flex;
   position: absolute;
   justify-content: space-between;
+  gap: 30px;
   top: 150px;
   padding: 0 150px;
 }
 .stats-item {
-  width: 263px;
+  width: 280px;
   position: relative;
-  height: 210px;
+  height: 235px;
   background-color: hsl(228, 28%, 20%);
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 35px;
 }
 
 .border {
   position: absolute;
   height: 10px;
   width: 100%;
-  background-color: aqua;
-  top: 0px;
+  border-radius: 5px;
+  top: -5px;
+  z-index: -1;
+}
+
+.border-f {
+  background-color: var(--Facebook);
+}
+
+.border-t {
+  background-color: var(--Twitter);
+}
+.border-i {
+  background: var(--Instagram);
+}
+
+.border-y {
+  background-color: var(--YouTube);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.social-name {
+  color: var(--color-text);
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.followers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.f-number {
+  font-weight: 700;
+  font-size: 3.3em;
+  margin: 25px 0px 0px 0px;
+}
+
+.f-text {
+  color: var(--color-text);
+  font-size: 0.8em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.rating {
+  font-size: 0.9em;
+}
+.rating img {
+  margin-right: 8px;
+}
+
+.pos {
+  color: var(--Lime-Green);
+}
+
+.neg {
+  color: var(--Bright-Red);
 }
