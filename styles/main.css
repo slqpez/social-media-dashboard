@@ -20,13 +20,22 @@ body {
   background: hsl(230, 17%, 14%);
   color: hsl(0, 0%, 100%);
 }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
 header {
   background: hsl(232, 19%, 15%);
   display: flex;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+  max-width: 1440px;
+  padding: 50px 150px;
   position: relative;
   justify-content: space-between;
   height: 250px;
-  padding: 35px 150px 0px 150px;
 }
 header h1 {
   font-size: 24px;
@@ -81,10 +90,10 @@ header p {
   position: relative;
   gap: 30px;
   justify-content: space-between;
-  top: -110px;
-  padding: 0 150px;
   z-index: 1;
   flex: 1;
+  margin-top: -100px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
 }
 .stats-item {
@@ -178,9 +187,6 @@ header p {
   color: var(--Bright-Red);
 }
 
-.overview-container {
-  padding: 0 150px;
-}
 .overview-container h2 {
   margin-bottom: 25px;
 }
@@ -191,15 +197,21 @@ header p {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  padding-bottom: 70px;
 }
 
 .overview-item {
   width: 260px;
   height: 130px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   border-radius: 5px;
   background-color: hsl(228, 28%, 20%);
   padding: 25px;
+  cursor: pointer;
+}
+
+.overview-item:hover {
+  background-color: hsl(228, 28%, 25%);
 }
 .overview-title {
   display: flex;
