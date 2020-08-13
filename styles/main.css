@@ -249,16 +249,15 @@ header p {
   left: 10px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 712px) {
+@media screen and (min-width: 355px) and (max-width: 712px) {
   header {
-    padding: 10px;
-    width: 80%;
+    height: 220px;
     margin: auto;
     flex-direction: column;
     justify-content: flex-start;
   }
-  h1 {
-    font-size: 0.7em;
+  header h1 {
+    font-size: 1em;
   }
   .header-title {
     margin-bottom: 0px;
@@ -281,7 +280,7 @@ header p {
     margin: auto;
   }
   .wrapper-header {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .overview-grid,
@@ -290,29 +289,70 @@ header p {
   .overview-item {
     width: 100%;
   }
+  .stats-grid {
+    margin-top: -40px;
+  }
   .stats-item,
   .overview-item {
-    max-width: 500px;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 593px) {
-  .wrapper {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 713px) {
-  .stats-item,
-  .overview-item {
-    width: 260px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 790px) {
   .wrapper {
     width: 100%;
+    margin: auto;
+    padding: 0 130px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .stats-item,
+  .overview-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  header {
+    height: 230px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header h1 {
+    font-size: 0.5em;
+  }
+  .switch-theme {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-title {
+    margin-bottom: 0px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+  }
+  .followers .f-number {
+    font-size: 2em;
+  }
+  .f-text {
+    font-size: 0.5em;
+  }
+  .stats-item {
+    height: auto;
+  }
+  .stats-grid {
+    margin-top: -50px;
   }
 }
