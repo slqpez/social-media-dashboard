@@ -244,3 +244,68 @@ header p {
   bottom: 5px;
   left: 10px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 712px) {
+  header {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  h1 {
+    font-size: 0.7em;
+  }
+  .header-title {
+    margin-bottom: 0px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+  }
+  .switch-theme p {
+    color: hsl(228, 34%, 66%);
+  }
+
+  .switch-theme {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
+  .overview-grid,
+  .stats-grid,
+  .stats-item,
+  .overview-item {
+    width: 100%;
+  }
+  .stats-item,
+  .overview-item {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 593px) {
+  .wrapper {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 713px) {
+  header {
+    width: 80%;
+    padding: 10px;
+    padding-top: 40px;
+    margin: auto;
+  }
+  .stats-item,
+  .overview-item {
+    width: 260px;
+  }
+}
