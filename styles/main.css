@@ -21,18 +21,22 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+.wrapper-header {
+  background-color: hsl(232, 19%, 15%);
+  width: 100%;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 150px;
+  background-color: transparent;
 }
 header {
   background: hsl(232, 19%, 15%);
+  padding-top: 30px;
   display: flex;
-  width: 100%;
   border-radius: 0px 0px 10px 10px;
-  max-width: 1440px;
-  padding: 50px 150px;
   position: relative;
   justify-content: space-between;
   height: 250px;
@@ -274,7 +278,10 @@ header p {
   }
   .wrapper {
     width: 90%;
-    padding: 10px;
+    margin: auto;
+  }
+  .wrapper-header {
+    width: 90%;
     margin: auto;
   }
   .overview-grid,
@@ -292,20 +299,20 @@ header p {
 @media screen and (min-width: 593px) {
   .wrapper {
     width: 80%;
-    padding: 10px;
     margin: auto;
   }
 }
 
 @media screen and (min-width: 713px) {
-  header {
-    width: 80%;
-    padding: 10px;
-    padding-top: 40px;
-    margin: auto;
-  }
   .stats-item,
   .overview-item {
     width: 260px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
   }
 }
